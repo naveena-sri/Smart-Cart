@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <!-- Title TextView -->
+    <TextView
+        android:id="@+id/categoryTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Category: Rice"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:paddingBottom="16dp" />
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+    android:rowCount="5"
+    android:orientation="horizontal"
+    android:alignmentMode="alignMargins"
+    android:padding="10dp"
+    android:useDefaultMargins="true">
+
+    <!-- FrameLayout for each Grid Item (5x2 Matrix) -->
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1">
+
+        <!-- ImageView inside the FrameLayout -->
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/rice_item_1"
+            android:scaleType="centerCrop" />
+
+        <!-- Optional TextView or overlay inside the FrameLayout -->
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Basmati"
+            android:background="#80000000"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="bottom"
+        android:padding="4dp" />
+    </FrameLayout>
+
+    <!-- FrameLayout for the second item -->
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/rice_image_2"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Royal Ponni"
+            android:background="#80000000"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="bottom"
+            android:padding="4dp" />
+    </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/rice_image_3"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Naattu Ponni"
+                android:background="#80000000"
+                android:textColor="#FFFFFF"
+                android:layout_gravity="bottom"
+                android:padding="4dp" />
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/rice_image_4"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Royal PonniBoiled"
+                android:background="#80000000"
+                android:textColor="#FFFFFF"
+                android:layout_gravity="bottom"
+                android:padding="4dp" />
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1">
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/rice_image_5"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Easy Cook Long Grain"
+                android:background="#80000000"
+                android:textColor="#FFFFFF"
+                android:layout_gravity="bottom"
+                android:padding="4dp" />
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1">
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/rice_image_6"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cargo rice"
+                android:background="#80000000"
+                android:textColor="#FFFFFF"
+                android:layout_gravity="bottom"
+                android:padding="4dp" />
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1">
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/rice_image_7"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="wheat"
+                android:background="#80000000"
+                android:textColor="#FFFFFF"
+                android:layout_gravity="bottom"
+                android:padding="4dp" />
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1">
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/rice_image_8"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kurunai"
+                android:background="#80000000"
+                android:textColor="#FFFFFF"
+                android:layout_gravity="bottom"
+                android:padding="4dp" />
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1">
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/rice_image_9"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Brown Rice"
+                android:background="#80000000"
+                android:textColor="#FFFFFF"
+                android:layout_gravity="bottom"
+                android:padding="4dp" />
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1">
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/rice_image_10"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jasmine"
+                android:background="#80000000"
+                android:textColor="#FFFFFF"
+                android:layout_gravity="bottom"
+                android:padding="4dp" />
+        </FrameLayout>
+
+
+
+</GridLayout>
+    </LinearLayout>
+    </ScrollView>

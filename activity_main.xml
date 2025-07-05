@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Toolbar with App Name and Cart Icon -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#9370DB"
+        android:elevation="4dp">
+
+        <!-- App Name on the Left -->
+        <TextView
+            android:id="@+id/app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shelf Wipe"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:layout_gravity="start"
+            android:gravity="center_vertical" />
+
+        <!-- Cart Icon on the Right -->
+        <ImageView
+            android:id="@+id/cart_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/app_logo"
+            android:contentDescription="Cart"
+            android:layout_gravity="end"
+            android:layout_marginEnd="16dp"
+            android:padding="8dp"
+            app:tint="#FFFFFF" />
+    </androidx.appcompat.widget.Toolbar>
+    <ScrollView
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/category_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Product Categories"
+        android:textSize="24sp"
+        android:textColor="#000000"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp" />
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/grid_layout"
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_marginTop="40dp"
+        app:alignmentMode="alignMargins"
+        app:columnCount="2">
+
+        <!-- Sample Category 1: Rice -->
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:layout_columnWeight="1">
+
+            <ImageView
+                android:id="@+id/image_rice"
+                android:layout_width="170dp"
+                android:layout_height="178dp"
+                android:src="@drawable/rice_image"
+                android:background="@drawable/border"
+                android:contentDescription="Rice"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/text_rice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rice"
+                android:background="#AA000000"
+                android:textColor="@android:color/white"
+                android:layout_gravity="bottom"
+                android:padding="4dp" />
+        </FrameLayout>
+
+        <!-- Sample Category 2: Cooking Essentials -->
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:layout_columnWeight="1">
+
+            <ImageView
+                android:id="@+id/image_cooking_essentials"
+                android:layout_width="170dp"
+                android:layout_height="180dp"
+                android:background="@drawable/border"
+                android:src="@drawable/cooking_essentials_image"
+                android:contentDescription="Cooking Essentials"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/text_cooking_essentials"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cooking Essentials"
+                android:background="#AA000000"
+                android:textColor="@android:color/white"
+                android:layout_gravity="bottom"
+                android:padding="4dp" />
+        </FrameLayout>
+
+        <!--category3-->
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:layout_columnWeight="1">
+
+            <ImageView
+                android:id="@+id/divine_products"
+                android:layout_width="170dp"
+                android:layout_height="180dp"
+                android:background="@drawable/border"
+                android:contentDescription="Divine_Products"
+                android:scaleType="centerCrop"
+                android:src="@drawable/divine_products" />
+
+            <TextView
+                android:id="@+id/text_cooking_ess"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Divine Products"
+                android:background="#AA000000"
+                android:textColor="@android:color/white"
+                android:layout_gravity="bottom"
+                android:padding="4dp" />
+        </FrameLayout>
+
+        <!--category4-->
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:layout_columnWeight="1">
+
+            <ImageView
+                android:id="@+id/Biscuits"
+                android:layout_width="170dp"
+                android:layout_height="180dp"
+                android:background="@drawable/border"
+                android:src="@drawable/biscuits"
+                android:contentDescription="Cookies and Biscuits"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/CookiesBiscuits"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cookies and Biscuits"
+                android:background="#AA000000"
+                android:textColor="@android:color/white"
+                android:layout_gravity="bottom"
+                android:padding="4dp" />
+        </FrameLayout>
+        <!--category5-->
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:layout_columnWeight="1">
+
+            <ImageView
+                android:id="@+id/soapsshampoo"
+                android:layout_width="170dp"
+                android:layout_height="180dp"
+                android:background="@drawable/border"
+                android:src="@drawable/soap_shampoos"
+                android:contentDescription="soap_shampoos"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/soap_shampoos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Soaps and shampoo"
+                android:background="#AA000000"
+                android:textColor="@android:color/white"
+                android:layout_gravity="bottom"
+                android:padding="4dp" />
+        </FrameLayout>
+
+        <!--category6-->
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:layout_columnWeight="1">
+
+            <ImageView
+                android:id="@+id/cerels"
+                android:layout_width="170dp"
+                android:layout_height="180dp"
+                android:background="@drawable/border"
+                android:src="@drawable/cerels"
+                android:contentDescription="cerels"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/cerels_pulses"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Raw Cerels"
+                android:background="#AA000000"
+                android:textColor="@android:color/white"
+                android:layout_gravity="bottom"
+                android:padding="4dp" />
+        </FrameLayout>
+
+    </androidx.gridlayout.widget.GridLayout>
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Needs, Our Priority: Delivering Quality Every Time!"
+        android:textSize="24sp"
+        android:textColor="#9370DB"
+        android:layout_below="@id/grid_layout"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:textAlignment="center"/>
+    </ScrollView>
+</RelativeLayout>
